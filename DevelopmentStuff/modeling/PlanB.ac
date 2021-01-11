@@ -5,8 +5,9 @@ kids 1
 OBJECT poly
 name "rect"
 loc -193.096 -70 -68.8823
-texture "/Users/cm/Documents/GitHub/Lukla_mods_FG/DevelopmentStuff/modeling/luklaPlan.png"
+texture "luklaPlan.png"
 crease 45.000000
+locked
 numvert 4
 -410.5 0 -463.5
 410.5 0 -463.5
