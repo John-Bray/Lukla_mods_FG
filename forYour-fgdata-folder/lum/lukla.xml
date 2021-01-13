@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<!-- Test VNLK Lukla -->
+
+<PropertyList>
+  <name>Lukla</name>
+
+  <area>
+    <lon1>86.5</lon1>
+    <lon2>86.75</lon2>
+    <lat1>27.5</lat1>
+    <lat2>27.75</lat2>
+  </area>
+
+  <condition>
+    <equals>
+      <property>sim/startup/season</property>
+      <value>summer</value>
+    </equals>
+  </condition>
+
+<material>
+    <name>Airport</name>
+	<texture-set>
+     <texture>Runway/grass_rwy.png</texture>
+
+    <!--<texture>aluk/vnlk-piste.png</texture>-->
+	</texture-set>
+    <xsize>1000</xsize>
+    <ysize>1000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.7</friction-factor>
+    <rolling-friction>0.02</rolling-friction>
+    <bumpiness>0.1</bumpiness>
+    <load-resistance>1e30</load-resistance>
+</material>
+
+<material>
+    <name>Rwy</name>
+	<texture-set>
+
+    <texture>aluk/vnlk-piste.png</texture>
+	</texture-set>
+    <xsize>1000</xsize>
+    <ysize>1000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.7</friction-factor>
+    <rolling-friction>0.02</rolling-friction>
+    <bumpiness>0.1</bumpiness>
+    <load-resistance>1e30</load-resistance>
+</material>
+
+<material>
+    <name>Stream</name>
+    <texture-set>
+      <texture>Terrain/grass_dry3.png</texture>
+      <texture n="12">Terrain/rock.png</texture>
+    </texture-set>
+    <parameters>
+			<grain_strength>0.2</grain_strength>
+    </parameters>
+    <xsize>5000</xsize>
+    <ysize>5000</ysize>
+    <light-coverage>80000.0</light-coverage>
+    <wood-coverage>200.0</wood-coverage>
+    <tree-texture>aht/alpes-shrub.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>1</tree-height-m>
+    <tree-width-m>1.0</tree-width-m>
+  </material>
+
+<material>
+    <name>Caillasse</name>
+    <texture-set>
+      <texture>Terrain/california-rock.png</texture>
+      <texture n="12">Terrain/rock.png</texture>
+    </texture-set>
+    <parameters>
+			<grain_strength>0.2</grain_strength>
+    </parameters>
+    <xsize>1000</xsize>
+    <ysize>1000</ysize>
+    <light-coverage>80000.0</light-coverage>
+    <wood-coverage>200.0</wood-coverage>
+    <tree-texture>aht/alpes-shrub.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>4</tree-height-m>
+    <tree-width-m>4.0</tree-width-m>
+    <rolling-friction>1</rolling-friction>
+    <bumpiness>0.95</bumpiness>
+  </material>
+
+<material>
+    <name>Grass1</name>
+	<texture-set>
+     <texture>Terrain/dry_pasture4.png</texture>
+	</texture-set>
+    <xsize>1000</xsize>
+    <ysize>1000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.7</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.3</bumpiness>
+    <load-resistance>1e30</load-resistance>
+    <wood-coverage>100000.0</wood-coverage>
+    <tree-texture>Trees/mixed-alt.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>15.0</tree-height-m>
+    <tree-width-m>7.0</tree-width-m>
+  </material>
+
+<material>
+    <name>Grass2</name>
+	<texture-set>
+     <texture>Terrain/dry_pasture4.png</texture>
+	</texture-set>
+    <xsize>500</xsize>
+    <ysize>500</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.7</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.3</bumpiness>
+    <load-resistance>1e30</load-resistance>
+  </material>
+
+<material>
+    <name>Town</name>
+    <!-- <effect>Effects/urban</effect> -->
+    <texture-set>
+      <texture>Terrain/town-europe-south.png</texture>
+
+    </texture-set>
+   <object-mask>Terrain/town-europe.mask.png</object-mask>
+    <xsize>1000</xsize>
+    <ysize>1000</ysize>
+    <light-coverage>100000.0</light-coverage>
+    <emissive>
+      <r>0.05</r>
+      <g>0.05</g>
+      <b>0.02</b>
+      <a>1.0</a>
+    </emissive>
+    <object-group include="Materials/base/town-buildings.xml"/>
+    <building-coverage>500.0</building-coverage>
+    <building-small-ratio>0.9</building-small-ratio>
+    <building-medium-ratio>0.1</building-medium-ratio>
+    <building-large-ratio>0.0</building-large-ratio>
+    <building-medium-max-floors>4</building-medium-max-floors>
+    <building-texture>Textures/buildings.png</building-texture>
+    <building-lightmap>Textures/buildings-lightmap.png</building-lightmap>
+    <wood-coverage>50000.0</wood-coverage>
+    <tree-texture>Trees/deciduous-alt.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>8.0</tree-height-m>
+    <tree-width-m>4.0</tree-width-m>
+  </material>
+
+
+
+
+<material>
+    <name>LukForest</name>
+    <texture-set>
+      <texture>Terrain/forest1a.png</texture>
+    </texture-set>
+    <xsize>1000</xsize>
+    <ysize>1000</ysize>
+    <light-coverage>100000.0</light-coverage>
+    <wood-coverage>400.0</wood-coverage>
+    <tree-texture>Trees/mixed-alt.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>25.0</tree-height-m>
+    <tree-width-m>15.0</tree-width-m>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.7</bumpiness>
+    <load-resistance>1e30</load-resistance>
+  </material>
+
+<material>
+
+    <name>DryCrop1</name>
+    <texture-set>
+      <texture>Terrain/pampas-grass-hires.png</texture>
+      <texture n="11">Terrain/airport.png</texture>
+      <texture n="12">Terrain/deciduous-hires.png</texture>
+      <texture n="14">Terrain/grain_texture.png</texture>
+      <texture n="15">Terrain/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+   <transition_model>0.8</transition_model>
+   <hires_overlay_bias>0.0</hires_overlay_bias>
+    </parameters>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.7</bumpiness>
+    <load-resistance>1e30</load-resistance>
+
+    <wood-coverage>750.0</wood-coverage>
+    <tree-texture>Trees/mixed-alt.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>6.0</tree-height-m>
+    <tree-width-m>6.0</tree-width-m>
+
+  </material>
+
+<material>
+    <name>DryCrop2</name>
+    <texture-set>
+      <texture>Terrain/pampas-grass-hires.png</texture>
+      <texture n="11">Terrain/airport.png</texture>
+      <texture n="12">Terrain/deciduous-hires.png</texture>
+      <texture n="14">Terrain/grain_texture.png</texture>
+      <texture n="15">Terrain/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+   <transition_model>0.8</transition_model>
+   <hires_overlay_bias>0.0</hires_overlay_bias>
+    </parameters>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.7</bumpiness>
+    <load-resistance>1e30</load-resistance>
+
+
+
+  </material>
+
+
+</PropertyList>
