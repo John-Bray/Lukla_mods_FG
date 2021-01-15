@@ -5,7 +5,7 @@
     <lon>86.727177</lon><lat>27.685599</lat><rwy>06</rwy><hdg-deg>59.752882</hdg-deg><displ-m>0</displ-m><stopw-m>0</stopw-m>
 </threshold>
 <threshold>
-    <lon>86.731688</lon><lat>27.687928</lat><rwy>24</rwy><hdg-deg>-120.244912</hdg-deg><displ-m>0</displ-m><stopw-m>0</stopw-m>
+    <lon>86.731924</lon><lat>27.688050</lat><rwy>24</rwy><hdg-deg>-120.244912</hdg-deg><displ-m>0</displ-m><stopw-m>0</stopw-m>
 </threshold>
 </runway>
 </PropertyList>
